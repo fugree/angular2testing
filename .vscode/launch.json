@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Launch Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:4200",
+            "sourceMaps" : true ,
+            "webRoot": "${workspaceRoot}",
+            "trace" : true //,
+          //   "userDataDir": "${workspaceRoot}/out/chrome"
+        //    "sourceMapPathOverrides": {
+        //      "webpack:///C:/TFS-New/SIPM/WEB/HPE.WEB.UI//HpeWeb/src/*": "${webRoot}/src/*"
+        //    //  "webpack:///C:\\TFS-New\\SIPM\\WEB\\test\\HpeWeb\\node_modules\\source_map\\dist\\*": "${webRoot}\\*"          
+        //     }   
+           // c:\\TFS-New\\SIPM\\WEB\\HPE.WEB.UI\\HpeWeb\\.vscode\\chrome
+        //    "userDataDir": "${workspaceRoot}\\.vscode\\chrome" 
+          //  "userDataDir": "${workspaceRoot}\\out\\chrome" 
+        },         
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}\\serve",
+            "outFiles": []
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Process",
+            "address": "localhost",
+            "port": 5858,            
+            "outFiles": []
+        }
+    ]
+}

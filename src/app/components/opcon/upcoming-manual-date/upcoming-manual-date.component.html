@@ -1,0 +1,27 @@
+<p-dataTable [value]="_upcomingManualDates" [rows]="10" [paginator]="true" [pageLinks]="3" [rowsPerPageOptions]="[5,10,20]">
+        <p-header>
+            <div class="ui-g-12 ui-md-4" >
+                <h3>Upcoming Manual Dates</h3>
+                <p-calendar [(ngModel)]="value" [showIcon]="true">
+
+                </p-calendar>
+             </div>   
+        </p-header>
+        <p-column field="skdDateDisplay" header="Skd Date Display"></p-column>
+        <p-column field="day" header="Day"></p-column>
+        <p-column field="skdName" header="Skd Name"></p-column>
+        <p-column field="jobName" header="Job Name"></p-column>
+        <p-column field="freqName" header="Freq Name"></p-column>
+        <p-column field="field1" header="Field 1"></p-column>
+        <p-column field="out" header="Out"></p-column>
+        <p-column field="sort" header="Sort"></p-column>
+        <p-column field="field2" header="Field 2"></p-column>
+        <p-column field="field3" header="Field 3"></p-column>
+        <p-column field="indirect" header="Indirect"></p-column>
+        <p-column field="field4" header="Field 4"></p-column>
+        <p-column field="field5" header="Field 5"></p-column>
+        <p-column field="field6" header="Field 6"></p-column>
+        <p-column field="instructionsFileName" header="Instructions File Name"></p-column>
+        <p-column field="instructions" header="Instructions"></p-column>
+        <p-column field="comment" header="Comment"></p-column>
+    </p-dataTable>
